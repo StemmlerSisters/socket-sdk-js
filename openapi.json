@@ -5968,6 +5968,10 @@
                             "type": "string",
                             "default": ""
                           },
+                          "direct": {
+                            "type": "boolean",
+                            "default": false
+                          },
                           "id": {
                             "type": "string",
                             "default": ""
@@ -5995,6 +5999,7 @@
                         },
                         "required": [
                           "branch",
+                          "direct",
                           "id",
                           "name",
                           "namespace",
@@ -6086,15 +6091,7 @@
                 "schema": {
                   "type": "object",
                   "additionalProperties": false,
-                  "properties": {
-                    "id": {
-                      "type": "string",
-                      "default": ""
-                    }
-                  },
-                  "required": [
-                    "id"
-                  ]
+                  "properties": {}
                 }
               }
             },
